@@ -18,6 +18,7 @@ public class StringEx03 {
 		
 		String str = "megait";
 		System.out.println(str);
+		
 		System.out.println("\n==========================");
 		
 		// [1] length() : 문자열의 길이
@@ -26,6 +27,8 @@ public class StringEx03 {
 		System.out.println(size);
 		
 		System.out.println("\n==========================");
+		
+		
 		// [2] indexOf("글자") : 글자가 포함된 인덱스 확인
 		System.out.println(str.indexOf("m"));
 		System.out.println(str.indexOf("e"));
@@ -37,6 +40,8 @@ public class StringEx03 {
 		System.out.println(str.indexOf("it"));
 		
 		System.out.println("\n==========================");
+		
+		
 		// [3] charAt(index) : 문자 한개 추출 (인덱싱)
 		System.out.println(str.charAt(0));
 		System.out.println(str.charAt(1));
@@ -48,9 +53,11 @@ public class StringEx03 {
 		for (int i = 0; i < str.length(); i++) {
 			System.out.print(str.charAt(i) + " ");
 		}
-		
 		System.out.println();
+		
 		System.out.println("\n==========================");
+		
+		
 		// [4] substring() : 문자 여러개 추출 (슬라이싱) > 조각 **********매우매우 중요********
 		// 4-1) substring(index1이상, index2미만)
 		System.out.println(str.substring(0 , 4)); // 끝에 포함하지 않음 > 0,1,2,3
@@ -64,6 +71,8 @@ public class StringEx03 {
 		System.out.println(str.substring(4));
 		
 		System.out.println("\n==========================");
+		
+		
 		// [5] split("구분자") : 구분자로 잘라내기 
 		String str1 = "hello,java"; // > ,로 자름 
 		String str2 = "hello java programing";
@@ -83,12 +92,24 @@ public class StringEx03 {
 		}
 		System.out.println();
 		
-		temp = str3.split("@"); // >  덮어쓰기
+		temp = str3.split("@"); // >  @로 덮어쓰기
 		System.out.println(temp.length);
 		for (int i = 0; i < temp.length; i++) {
 			System.out.print(temp[i] + " ");
 		}
 		System.out.println();
+		
+		System.out.println("\n==========================");
+		
+		// 참고 ) compareTo(문자열) : 글자 비교 
+		
+		String data1 = "ac" ;
+		String data2 = "dc" ;
+		String data3 = "ac" ;
+		
+		System.out.println(data1.compareTo(data2));  // a < d -  왼쪽값(기준값)이 작을 경우 음수가 반환된다.
+		System.out.println(data2.compareTo(data1));  // d < a +  왼쪽값(기준값)이 클 경우 양수가 반환된다.
+		System.out.println(data1.compareTo(data3));  // a = a 0  양쪽값이 같을 경우 0이 반환된다.
 		
 	}
 

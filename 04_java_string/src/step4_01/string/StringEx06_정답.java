@@ -28,7 +28,7 @@ public class StringEx06_정답 {
 		
 		for (int i = 0; i < scores.length; i++) {
 			text += scores[i] + "";
-			if (i != scores.length-1) text += "/"; // > 끝에 /를 하나 뺌.
+			if (i != scores.length-1) text += "/"; 
 		}
 		System.out.println(text);
 
