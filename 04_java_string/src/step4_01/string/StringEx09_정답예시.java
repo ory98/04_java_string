@@ -31,8 +31,8 @@ public class StringEx09_정답예시 {
 			
 			String temp = words[0]; // > 임시 배열 temp에 [0]번째 단어 넣기   
 			words[0] = words[r]; // > 기존[0] 자리에 랜덤 [r] 단어을 넣기 
-			words[r] = temp; // > [r]자리에 [0] 단어를 넣고  
-		}
+			words[r] = temp; // > [r]자리에 temp에 들어간 [0] 단어를 넣기  
+		}  // > 두 숫자의 자리를 바꾸는 방식 
 		
 		int i = 0;
 		while (i < words.length) {

@@ -8,14 +8,14 @@ public class StringEx13_정답예시 {
 		
 		String[] names = {"홍길동", "김유신", "마동석", "자바킹", "서동요"};
 
-		for (int i=0; i<names.length; i++) {
+		for (int i=0; i<names.length; i++) { 
 			
-			String minName = names[i];
-			int minIdx = i;
+			String minName = names[i]; // > names[i]을 minName 배열에 넣기  
+			int minIdx = i;			   
 			for (int j=i; j<names.length; j++) {
-				if (minName.compareTo(names[j]) > 0) {
-					minName = names[j];
-					minIdx = j;
+				if (minName.compareTo(names[j]) > 0) { // minName이랑 names[j]를 비교했을 때  0보다 크면 
+					minName = names[j]; // minName에 names[j]를 넣는다. 
+					minIdx = j; // minIdx는 j이다. 
 				}
 				
 			}
